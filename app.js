@@ -6,4 +6,4 @@ router.get("/",function(req,res){
 });
 app.use("/",router);
 app.listen(8888);
-console.log("端口8888已启用！");
+console.log("端口8888已启用！服务已开启！");
