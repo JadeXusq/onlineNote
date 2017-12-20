@@ -2,6 +2,10 @@ var express=require('express');
 var app=express();
 var router=express.Router();
 
+//处理post请求
+var bodyParser=require("body-parser");
+app.use(bodyParser());
+
 //设置主页
 router.get("/",function(req,res){
     res.sendFile(__dirname+"/views/index.html");
@@ -17,6 +21,12 @@ router.get('/:view',function(req,res){
     res.sendFile(__dirname+"/views/"+req.params.view+".html");
 })
 
+//登陆验证
+router.post("/userLogin",function(req,res){
+    res.send(req.body)
+})
+
+router.get("")
 //设置静态路径
 app.use(express.static("./public"));
 
