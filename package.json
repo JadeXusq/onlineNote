@@ -1,0 +1,8 @@
+{
+  "name": "onlineNote",
+  "description": "在线笔记本",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.16.2"
+  }
+}
