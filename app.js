@@ -2,7 +2,8 @@ var express=require('express');
 var app=express();
 var router=express.Router();
 
-//处理cookie
+//处理cookie,session
+var session=require("express-session");
 var cookieParser=require('cookie-parser');
 app.use(cookieParser());
 
