@@ -2,6 +2,10 @@ var express=require('express');
 var app=express();
 var router=express.Router();
 
+//处理cookie
+var cookieParser=require('cookie-parser');
+app.use(cookieParser());
+
 //处理post请求
 var bodyParser=require("body-parser");
 app.use(bodyParser());
